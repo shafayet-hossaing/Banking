@@ -1,6 +1,7 @@
 // Adding addEventListener To Submit Button
 const submitButton = document.getElementById("submitButton")
-submitButton.addEventListener("click", () => {
+submitButton.addEventListener("click", (e) => {
+    e.preventDefault()
 
     // Selecting Email Input
     const emailBox = document.getElementById("emailBox")
