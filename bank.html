@@ -15,6 +15,9 @@
 
     <title>Bank || Home</title>
     <style>
+      body {
+        font-family: tahoma;
+      }
       .moneyColor {
         color: #d63031;
       }
@@ -45,7 +48,7 @@
               <div class="col-md-4">
                 <div class="bg-color rounded-3 p-5 text-white text-center">
                   <h3>Deposit</h3>
-                  <h1>$00</h1>
+                  <h1>$<span id="currentDepositText">00</span></h1>
                 </div>
               </div>
               <div class="col-md-4">
@@ -57,7 +60,7 @@
               <div class="col-md-4">
                 <div class="bg-color p-5 rounded-3 text-white text-center">
                   <h3>Balance</h3>
-                  <h1>$1200</h1>
+                  <h1>$<span id="balance">1200</span></h1>
                 </div>
               </div>
             </div>
@@ -65,26 +68,29 @@
           <section>
             <div class="row col-md-9 mt-5 mx-auto fw-bold">
               <div class="col-md-6 p-5 bg-color rounded text-white">
-                <form>
+                <div>
                   <p>Please Deposit 😢</p>
                   <input
                     type="text"
-                    placeholder="Deposit 🙂 "
+                    id="newDepositAmount"
+                    placeholder="$ Amount You Want To Deposit 🙂 "
                     class="form-control mb-4"
                   />
-                  <button class="btn fw-bold btn-color">Deposit</button>
-                </form>
+                  <button id="depositButton" class="btn fw-bold btn-color">
+                    Deposit
+                  </button>
+                </div>
               </div>
               <div class="col-md-6 p-5 bg-color rounded text-white">
-                <form>
+                <div>
                   <p>Withdraw 🥳</p>
                   <input
                     type="text"
-                    placeholder="Withdraw 😎  "
+                    placeholder="$ Amount You Want To Withdraw 😎  "
                     class="form-control mb-4"
                   />
                   <button class="btn fw-bold btn-color">Withdraw</button>
-                </form>
+                </div>
               </div>
             </div>
           </section>
@@ -92,6 +98,8 @@
       </div>
     </main>
 
+    <!-- Custom Js File -->
+    <script src="JS/mainbank.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
