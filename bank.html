@@ -14,9 +14,84 @@
     />
 
     <title>Bank || Home</title>
+    <style>
+      .moneyColor {
+        color: #d63031;
+      }
+      .bg-color {
+        background: #0a3d62;
+      }
+      .btn-color {
+        background: white;
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome To Bank</h1>
+    <!-- Header -->
+    <header class="py-5">
+      <div class="container">
+        <div class="col-md-12 mt-5">
+          <h2 class="text-center">
+            Let's Get Some <span class="moneyColor">Money</span> 😍
+          </h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div>
+          <section>
+            <div class="row col-md-9 mx-auto">
+              <div class="col-md-4">
+                <div class="bg-color rounded-3 p-5 text-white text-center">
+                  <h3>Deposit</h3>
+                  <h1>$00</h1>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="mx-1 bg-color rounded-3 p-5 text-white text-center">
+                  <h3>Withdraw</h3>
+                  <h1>$00</h1>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="bg-color p-5 rounded-3 text-white text-center">
+                  <h3>Balance</h3>
+                  <h1>$1200</h1>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="row col-md-9 mt-5 mx-auto fw-bold">
+              <div class="col-md-6 p-5 bg-color rounded text-white">
+                <form>
+                  <p>Please Deposit 😢</p>
+                  <input
+                    type="text"
+                    placeholder="Deposit 🙂 "
+                    class="form-control mb-4"
+                  />
+                  <button class="btn fw-bold btn-color">Deposit</button>
+                </form>
+              </div>
+              <div class="col-md-6 p-5 bg-color rounded text-white">
+                <form>
+                  <p>Withdraw 🥳</p>
+                  <input
+                    type="text"
+                    placeholder="Withdraw 😎  "
+                    class="form-control mb-4"
+                  />
+                  <button class="btn fw-bold btn-color">Withdraw</button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
