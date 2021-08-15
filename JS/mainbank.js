@@ -60,4 +60,7 @@ withdrawButton.addEventListener("click", () => {
     const newUpdatedBalanceAmount = currentBalance - newWithdrawAmountText
     balance.innerText = newUpdatedBalanceAmount
 
+    // Clearing the withdraw input
+    newWithdrawAmount.value = ""
+
 })
