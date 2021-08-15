@@ -54,7 +54,7 @@
               <div class="col-md-4">
                 <div class="mx-1 bg-color rounded-3 p-5 text-white text-center">
                   <h3>Withdraw</h3>
-                  <h1>$00</h1>
+                  <h1>$<span id="withdraw">00</span></h1>
                 </div>
               </div>
               <div class="col-md-4">
@@ -86,10 +86,13 @@
                   <p>Withdraw 🥳</p>
                   <input
                     type="text"
+                    id="newWithdraw"
                     placeholder="$ Amount You Want To Withdraw 😎  "
                     class="form-control mb-4"
                   />
-                  <button class="btn fw-bold btn-color">Withdraw</button>
+                  <button id="withdrawButton" class="btn fw-bold btn-color">
+                    Withdraw
+                  </button>
                 </div>
               </div>
             </div>
