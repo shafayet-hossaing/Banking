@@ -105,6 +105,8 @@ depositButton.addEventListener("click", () => {
         field("currentDepositText", parsingNewDepositAmountValue)
         // Calling Function
         balance(parsingNewDepositAmountValue, true)
+    }else{
+        alert("Gimme A Positive Value 💢 😠 ")
     }
     
 
@@ -165,6 +167,8 @@ withdrawButton.addEventListener("click", () => {
         field("withdraw", parsingNewWithdrawAmountText)
         // Calling Function
         balance(parsingNewWithdrawAmountText, false)
+    }else{
+        alert("Gimme A Positive Value 💢 😠 ")
     }
     
     
